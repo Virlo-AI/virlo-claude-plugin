@@ -1,0 +1,15 @@
+{
+  "name": "virlo",
+  "displayName": "Virlo",
+  "version": "0.3.0",
+  "description": "Short-form social intelligence: TikTok, YouTube Shorts, and Instagram Reels trend discovery, viral video analysis, creator lookups, trending sounds and hashtags, and niche research agents, through Virlo's hosted MCP server.",
+  "author": {
+    "name": "Virlo",
+    "email": "support@virlo.ai",
+    "url": "https://virlo.ai"
+  },
+  "homepage": "https://dev.virlo.ai/docs/mcp",
+  "repository": "https://github.com/Virlo-AI/virlo-claude-plugin",
+  "license": "MIT",
+  "keywords": ["virlo", "social-media", "tiktok", "youtube-shorts", "instagram-reels", "trends", "viral-videos", "creator-intelligence", "trending-sounds", "hashtags"]
+}
