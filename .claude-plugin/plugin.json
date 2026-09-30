@@ -11,5 +11,20 @@
   "homepage": "https://dev.virlo.ai/docs/mcp",
   "repository": "https://github.com/Virlo-AI/virlo-claude-plugin",
   "license": "MIT",
-  "keywords": ["virlo", "social-media", "tiktok", "youtube-shorts", "instagram-reels", "trends", "viral-videos", "creator-intelligence", "trending-sounds", "hashtags"]
+  "privacyPolicyUrl": "https://virlo.ai/legal/privacy-policy",
+  "termsOfServiceUrl": "https://virlo.ai/legal/terms-of-service",
+  "supportUrl": "https://virlo.ai/support",
+  "websiteUrl": "https://virlo.ai",
+  "keywords": [
+    "virlo",
+    "social-media",
+    "tiktok",
+    "youtube-shorts",
+    "instagram-reels",
+    "trends",
+    "viral-videos",
+    "creator-intelligence",
+    "trending-sounds",
+    "hashtags"
+  ]
 }
