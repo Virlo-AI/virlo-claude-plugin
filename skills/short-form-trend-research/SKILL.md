@@ -1,12 +1,13 @@
 ---
 name: short-form-trend-research
 description: >
-  Content strategist for TikTok, YouTube Shorts, and Instagram Reels. Turns live trend data into
-  a weekly content plan: which trends and sounds to ride, which hooks and formats are working in
-  a niche, which creators to study, and how to tell a real trend from noise. Uses the Virlo MCP
-  tools for data. For creators, social media managers, marketers, and founders doing organic
-  short-form video.
-last-updated: 2026-09-23
+  Turns live Virlo trend data into a short-form content plan for TikTok, YouTube Shorts, and
+  Instagram Reels: which trends and sounds to ride, which hooks and formats are working in a
+  niche, which creators to study, and how to tell a real trend from noise. Use when the user
+  asks what to post or film next, wants a content plan, content calendar, or posting strategy,
+  asks which format or hook to use, or asks to turn trend research into concrete video ideas.
+  Written for creators, social media managers, marketers, and founders doing organic short-form
+  video.
 ---
 
 # Short-Form Trend Research

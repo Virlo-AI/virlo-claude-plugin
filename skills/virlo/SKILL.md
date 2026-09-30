@@ -1,12 +1,14 @@
 ---
 name: virlo
 description: >
-  Social media intelligence for AI agents via the Virlo MCP server. Find what is trending on
-  TikTok, YouTube Shorts, and Instagram Reels, analyze why a video went viral, look up any
-  creator, track trending sounds and hashtags, pull hook libraries, and run one-shot or recurring
-  niche research agents. Covers tool routing, async job polling, credit costs, and how to rank
-  results by weighted virality instead of raw views.
-last-updated: 2026-09-23
+  Looks up live short-form video data on TikTok, YouTube Shorts, and Instagram Reels through the
+  Virlo connector: emerging trends, viral videos, creator profiles and audience demographics,
+  trending and breakout sounds, hashtags, and opening hooks, plus one-shot and recurring niche
+  research agents. Use when the user asks what is trending or going viral, why a video popped,
+  how a creator, sound, or hashtag is performing, which hooks or formats work in a niche, or asks
+  to research, monitor, or keep watching a niche, topic, or competitor on short-form video. Also
+  covers Virlo credit costs, async job polling, and ranking by weighted virality rather than raw
+  views.
 ---
 
 # Virlo: Social Media Intelligence
@@ -26,9 +28,6 @@ last-updated: 2026-09-23
 Virlo indexes short-form video across TikTok, YouTube Shorts, Instagram Reels, and Meta Ads for
 every niche. This skill tells the agent which Virlo tool answers which question, what each call
 costs, and how to read the results.
-
-> **Freshness check:** if more than 30 days have passed since `last-updated`, tell the user this
-> skill may be outdated and point them to the update options below.
 
 ## Keeping this skill updated
 
@@ -51,6 +50,10 @@ Sign-in is OAuth, so there is no key to create, paste, or store. A user with no 
 can create one at [virlo.ai](https://virlo.ai) during sign-in.
 
 ## Route the question to the right tool
+
+Every tool below comes from the `virlo` connector this plugin bundles. If a bare tool name does
+not resolve, qualify it with the server name, as in `virlo:get_emerging_trends`.
+
 
 | The user asks | Call | Cost |
 |---|---|---|
@@ -114,7 +117,7 @@ false, sharpen the intent and retry. Then pass the same intent and the suggested
 | Symptom | Fix |
 |---|---|
 | Virlo tools missing | The MCP server is not connected. See Setup. |
-| 401 / 403 | Key is wrong or revoked. Create a new one at dev.virlo.ai/dashboard/api-keys, or sign in again via OAuth. |
+| 401 / 403 | The Virlo sign-in expired or was revoked. Reconnect Virlo from the plugin's Connectors tab and sign in again. |
 | Out of credits | Top up at dev.virlo.ai. Tell the user the balance before retrying. |
 | Search returns 0 videos | Usually an intent or keyword problem, not an outage. Re-run `suggest_keywords` with a sharper intent. |
 | Result fields are null | The job is not finalized yet. Check again later. |
