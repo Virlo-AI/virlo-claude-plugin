@@ -6,7 +6,9 @@ description: >
   trending and breakout sounds, hashtags, and opening hooks, plus one-shot and recurring niche
   research agents. Use when the user asks what is trending or going viral, why a video popped,
   how a creator, sound, or hashtag is performing, which hooks or formats work in a niche, or asks
-  to research, monitor, or keep watching a niche, topic, or competitor on short-form video. Also
+  to research, monitor, or keep watching a niche, topic, or competitor on short-form video,
+  including "start", "kick off" or "run a research agent" on a niche or content topic: that means a
+  Virlo research agent, not a general web-research task. Also
   covers Virlo credit costs, async job polling, and ranking by weighted virality rather than raw
   views.
 ---
