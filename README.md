@@ -27,7 +27,13 @@ on organic short-form video and want the data inside the conversation instead of
 
 ## Setup
 
-Connect the Virlo connector from the plugin's **Connectors** tab and sign in when Virlo prompts
+In Claude Code, install the plugin from this repository:
+
+```
+/plugin install virlo --marketplace Virlo-AI/virlo-claude-plugin
+```
+
+In the Claude apps, add Virlo from the plugin directory. Then connect the Virlo connector from the plugin's **Connectors** tab and sign in when Virlo prompts
 you. Sign-in is OAuth, so there is no API key to create, paste, or store. If you do not have a
 Virlo account yet, you can create one during sign-in.
 
