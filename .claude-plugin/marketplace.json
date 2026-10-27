@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Short-form social intelligence for Claude: TikTok, YouTube Shorts, and Instagram Reels trends, creators, sounds, and hashtags",
-    "version": "0.3.0"
+    "version": "0.4.0"
   },
   "plugins": [
     { "name": "virlo", "source": "./" }
