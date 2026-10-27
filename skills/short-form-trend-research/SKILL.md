@@ -36,13 +36,16 @@ platforms.
 
 1. Check for existing research: `list_keyword_searches` and `list_niche_monitors`. Reuse a match.
 2. If nothing matches, write a one-sentence intent (goal + content type + exclusions), run
-   `suggest_keywords`, confirm the cost, then `search_keywords`. Tell the user it takes about
-   15-20 minutes.
+   `suggest_keywords`, confirm the cost, then `search_keywords`. Tell the user it usually takes
+   about 8 minutes (9 in 10 within 20).
 3. In parallel, pull the free or cheap context: `get_emerging_trends`, `get_breakout_sounds`,
-   `get_trending_hooks`.
+   `get_trending_hooks`, and `get_content_trends` (Content Trends: video formats creators are copying right now,
+   filtered with `client_fit` or `platform` when it helps).
 4. When the agent finalizes, read `get_keyword_search_results`. Rank by weighted virality.
 5. Deliver:
-   - **3 trends to ride**, each with one example video and why it works.
+   - **3 trends to ride**, each with one example video and why it works. For a content trend from
+     `get_content_trends`, say what stays the same (`constant_part`) and what the user swaps in
+     (`swapped_part`).
    - **1-2 sounds** that are breaking out, not ones that already peaked.
    - **5 hooks** adapted to the user's niche, in their voice.
    - **5 video ideas** that combine the above: hook + format + sound + CTA.
@@ -65,6 +68,9 @@ platforms.
 A trend is worth riding when all of these are true:
 
 - It is **rising**, not flat. Check `get_emerging_trends` or `get_hashtag_performance` growth.
+  For a video format, call `get_content_trend` and read `lifecycle` (`new` or `rising` is the
+  window) and `creators_7d` against `creators_prev_7d`. Ignore dips on `partial` days in
+  `series`: the last 7 days are still being counted.
 - Small and mid accounts get outliers on it, not only big accounts. Use `follower_tier` filters.
 - It fits the user's niche without a forced angle.
 - The window is still open. A sound or format that peaked more than about a week ago is late.

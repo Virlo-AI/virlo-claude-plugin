@@ -13,17 +13,17 @@ on organic short-form video and want the data inside the conversation instead of
 
 **Skills**
 
-- `virlo` — routes a question to the right Virlo tool, explains what each call costs, polls
+- `virlo`: routes a question to the right Virlo tool, explains what each call costs, polls
   async research agents correctly, and ranks results by weighted virality.
-- `short-form-trend-research` — turns live trend data into a weekly content plan: which trends
+- `short-form-trend-research`: turns live trend data into a weekly content plan: which trends
   and sounds to ride, which hooks and formats are working, which creators to study.
 
 **Commands**
 
-- `/virlo:trend-scout` — what is trending right now across all three platforms.
-- `/virlo:niche-analysis` — full niche workup: research agent, creators, recurring monitor.
-- `/virlo:creator-deep-dive` — one creator's outlier videos, cadence, and audience.
-- `/virlo:genre-monitor` — stand up a recurring monitor for a genre or scene.
+- `/virlo:trend-scout`: what is trending right now across all three platforms.
+- `/virlo:niche-analysis`: full niche workup: research agent, creators, recurring monitor.
+- `/virlo:creator-deep-dive`: one creator's outlier videos, cadence, and audience.
+- `/virlo:genre-monitor`: stand up a recurring monitor for a genre or scene.
 
 ## Setup
 
@@ -55,8 +55,9 @@ Disclosed in full so you can judge it before installing:
 ## Costs and billing
 
 Virlo is pay-as-you-go against a prepaid balance. Reads of results you already created are
-free; starting new work is not. The `X-Cost` response header on every call is the authoritative
-charge. Live per-tool pricing is at [dev.virlo.ai/docs/mcp](https://dev.virlo.ai/docs/mcp).
+free. Starting new work costs credits, and so do instant data reads (trends, sounds, hooks,
+hashtags), even when they come back empty. To see what one call cost, ask Claude to compare your
+balance before and after it. Live per-tool pricing is at [dev.virlo.ai/docs/mcp](https://dev.virlo.ai/docs/mcp).
 
 ## Links
 
