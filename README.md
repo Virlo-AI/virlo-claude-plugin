@@ -1,7 +1,7 @@
 # Virlo for Claude
 
 Short-form social intelligence for Claude. Ask what is trending on TikTok, YouTube Shorts, or
-Instagram Reels and get live data back: emerging trends, viral videos ranked by weighted
+Instagram Reels and get live data back: Topic Trends (what people talk about, by region), Content Trends, viral videos ranked by weighted
 virality instead of raw views, creator profiles with outlier videos and audience demographics,
 breakout sounds, trending hashtags, and proven opening hooks. You can also start research
 agents that study a niche once, or keep watching it on a schedule and report what changed.
