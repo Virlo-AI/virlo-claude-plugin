@@ -1,8 +1,8 @@
 # Virlo for Claude
 
 Short-form social intelligence for Claude. Ask what is trending on TikTok, YouTube Shorts, or
-Instagram Reels and get live data back: Topic Trends (what people talk about, by region), Content Trends, viral videos ranked by weighted
-virality instead of raw views, creator profiles with outlier videos and audience demographics,
+Instagram Reels and get live data back: example videos and creators for any topic ranked by
+Virality Score instead of raw views, Topic Trends (what people talk about, by region), Content Trends, creator profiles with outlier videos and audience demographics,
 breakout sounds, trending hashtags, and proven opening hooks. You can also start research
 agents that study a niche once, or keep watching it on a schedule and report what changed.
 
@@ -21,9 +21,9 @@ on organic short-form video and want the data inside the conversation instead of
 **Commands**
 
 - `/virlo:trend-scout`: what is trending right now across all three platforms.
-- `/virlo:niche-analysis`: full niche workup: research agent, creators, recurring monitor.
+- `/virlo:niche-analysis`: full niche workup: top videos, rising creators, and a research agent if you want fresh data.
 - `/virlo:creator-deep-dive`: one creator's outlier videos, cadence, and audience.
-- `/virlo:genre-monitor`: stand up a recurring monitor for a genre or scene.
+- `/virlo:genre-monitor`: stand up a recurring research agent for a genre or scene.
 
 ## Setup
 
@@ -54,15 +54,15 @@ Disclosed in full so you can judge it before installing:
   TikTok, YouTube, or Instagram accounts. It has no write access to any social platform.
 - **It spends Virlo credits.** Research agents, creator lookups, video analysis, and some
   trend, hashtag, and sound reads bill against your Virlo balance per call. The `virlo` skill
-  tells Claude to check your balance and quote the expected cost before any paid run, and to
-  get your go-ahead before creating a recurring agent, because a recurring agent bills on
-  every run. Credits are purchased on virlo.ai, never inside Claude.
+  tells Claude to quote the expected cost before any paid run, and to get your go-ahead
+  before starting a research agent, because a recurring agent bills on every run. Credits are purchased on virlo.ai, never inside Claude.
 
 ## Costs and billing
 
 Virlo is pay-as-you-go against a prepaid balance. Reads of results you already created are
-free. Starting new work costs credits, and so do instant data reads (trends, sounds, hooks,
-hashtags), even when they come back empty. To see what one call cost, ask Claude to compare your
+free. Starting new work costs credits, and so do library searches ($0.05 per page of 25) and
+instant data reads (trends, sounds, hooks, hashtags), even when they come back empty. A research
+agent costs $0.50 a run ($1.50 with Data Intelligence). To see what one call cost, ask Claude to compare your
 balance before and after it. Live per-tool pricing is at [dev.virlo.ai/docs/mcp](https://dev.virlo.ai/docs/mcp).
 
 ## Links
